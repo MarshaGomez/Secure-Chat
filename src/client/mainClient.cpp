@@ -179,7 +179,7 @@ int main(int argc, char *argv[])
         char *host;
         struct sockaddr_in serv_addr;
         unsigned int message_size;
-        char messageInput[MSG_MAX];
+        char messageInput[MAX_SIZE];
 
         client = new Client("");
         network = new Network(0, (char *)' ', SOCK_STREAM);
@@ -308,8 +308,8 @@ int main(int argc, char *argv[])
             if (chatting)
             {
                 std::cout << "\r" << capitalize(username) << ": ";
-                bzero(messageInput, MSG_MAX);
-                std::cin.getline(messageInput, MSG_MAX);
+                bzero(messageInput, MAX_SIZE);
+                std::cin.getline(messageInput, MAX_SIZE);
                 command.assign(messageInput);
             }
             else

@@ -61,7 +61,7 @@ void Network::startConnection()
 
 void Network::sendMessage(unsigned char *message, unsigned int messageLenght)
 {
-    if (messageLenght > MSG_MAX)
+    if (messageLenght > MAX_SIZE)
     {
         throw std::runtime_error("Max message size exceeded in Send");
     }

@@ -27,7 +27,6 @@
 // cryptography
 #define PASSWORD_SIZE 20
 #define MAX_SIZE 20*KILO
-#define MSG_MAX 10000
 #define NONCE_SIZE 4
 #define MSGHEADER 34
 #define NONCE_LENGTH 4

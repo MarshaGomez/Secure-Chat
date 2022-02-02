@@ -331,7 +331,7 @@ unsigned int Cryptography::digsignSign(EVP_PKEY *prvkey, unsigned char *clear_bu
                                        unsigned char *output_buffer)
 {
     int ret; // store the return of the function to check errors
-    if (clear_size > MSG_MAX)
+    if (clear_size > MAX_SIZE)
     {
         std::cerr << "Error in digsignSign(): message too big(invalid)\n";
         exit(1);
@@ -599,9 +599,9 @@ int Cryptography::authDecrypt(unsigned char *input_buffer, unsigned int input_le
         std::cerr << "Error in authDecrypt(): AAD Length is not consistent! \n";
         return -1;
     }
-    if (aad_len > MSG_MAX)
+    if (aad_len > MAX_SIZE)
     {
-        std::cerr << "Error in authDecrypt(): AAD Length is greater than the MSG_MAX! \n";
+        std::cerr << "Error in authDecrypt(): AAD Length is greater than the MAX_SIZE! \n";
         return -1;
     }
     // If AAD is consistent copy into the output AAD (argument of function)
@@ -621,9 +621,9 @@ int Cryptography::authDecrypt(unsigned char *input_buffer, unsigned int input_le
 
     // Copy the ciphertect
     unsigned int ciphertext_len = input_len - read;
-    if (ciphertext_len > MSG_MAX)
+    if (ciphertext_len > MAX_SIZE)
     {
-        std::cerr << "Error in authDecrypt(): Ciphertext Length is greater than the MSG_MAX!";
+        std::cerr << "Error in authDecrypt(): Ciphertext Length is greater than the MAX_SIZE!";
         return -1;
     }
     unsigned char *ciphertext = allocateValue(ciphertext, ciphertext_len);
@@ -883,7 +883,7 @@ void Cryptography::onChatting(std::string command, unsigned char *buffer, unsign
 {
     int ret, message_size;
 
-    if (command.length() > MSG_MAX)
+    if (command.length() > MAX_SIZE)
         std::cerr << "message too long." << std::endl;
     else if (command.length() > 0)
     {
@@ -973,7 +973,7 @@ void Cryptography::chatMessage(int ret, std::string username, unsigned char *buf
                               crypto_evp->cc_session_key, *crypto_evp->message_type, buffer, msgsize, message,
                               false);
 
-            if (ret > 0 && ret < MSG_MAX)
+            if (ret > 0 && ret < MAX_SIZE)
             {
                 safeIncrement(*crypto_evp->client_receive);
                 std::cout << "\r" << capitalize(user) << ": " << message << std::endl;

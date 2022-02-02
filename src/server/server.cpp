@@ -511,7 +511,7 @@ void *forwardingManager(void *CLIENT)
 		if (!(client->mb->outQueue.empty()))
 		{
 			Message message = client->mb->outQueue.front();
-			if (message.size <= MSG_MAX)
+			if (message.size <= MAX_SIZE)
 			{
 				client->mb->outQueue.pop();
 				memcpy(	aad, 
