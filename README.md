@@ -10,11 +10,11 @@
 
 <p align="center">
   <a href="https://www.codetriage.com/marshagomez/secure-chat">
-    <img src="https://www.codetriage.com/marshagomez/Secure-Chat/badges/users.svg"
+    <img src="https://www.codetriage.com/marshagomez/secure-chat/badges/users.svg"
          alt="Open Source Helpers">
   </a>
   <a href="https://www.codefactor.io/repository/github/marshagomez/secure-chat">
-    <img src="https://www.codefactor.io/repository/github/marshagomez/Secure-Chat/badge"
+    <img src="https://www.codefactor.io/repository/github/marshagomez/secure-chat/badge"
          alt="CodeFactor">
   </a>
   <a href="https://www.codacy.com/gh/MarshaGomez/Secure-Chat/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MarshaGomez/Secure-Chat&amp;utm_campaign=Badge_Grade">
