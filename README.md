@@ -6,15 +6,15 @@
   <br>
 </h1>
 
-<h4 align="center">Online Secure Chat</h4>
+<h4 align="center">Online Messaging Service</h4>
 
 <p align="center">
-  <a href="https://www.codetriage.com/marshagomez/secure-chat">
+  <a href="https://www.codetriage.com/marshagomez/Secure-Chat">
     <img src="https://www.codetriage.com/marshagomez/secure-chat/badges/users.svg"
          alt="Open Source Helpers">
   </a>
-  <a href="https://www.codefactor.io/repository/github/marshagomez/secure-chat">
-    <img src="https://www.codefactor.io/repository/github/marshagomez/secure-chat/badge"
+  <a href="https://www.codefactor.io/repository/github/marshagomez/Secure-Chat">
+    <img src="https://www.codefactor.io/repository/github/marshagomez/Secure-Chat/badge"
          alt="CodeFactor">
   </a>
   <a href="https://www.codacy.com/gh/MarshaGomez/Secure-Chat/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MarshaGomez/Secure-Chat&amp;utm_campaign=Badge_Grade">
@@ -24,14 +24,14 @@
 </p>
 
 <p align="center">
-  <a href="#secure-chat">Security Message</a> •
+  <a href="#Secure-Chat">Security Message</a> •
   <a href="#Fast-start">Fast Start</a> •
   <a href="#credits">Credits</a> 
 </p>
 
 # Secure-Chat
 
-This project was created with the main object of create a secure online message chat channel between users. You can take a look at the final Documentation on this [link](report/Final-Report.pdf) and the wiki report [here](https://github.com/MarshaGomez/Secure-Chat/wiki)
+This project was created with the main object of create a secure online message chat channel between users. You can take a look at the final Documentation on this [link](https://github.com/MarshaGomez/Secure-Chat/blob/main/report/Project%20Report.pdf) and the wiki report [here](https://github.com/MarshaGomez/Secure-Chat/wiki)
 
 - - - -
 
@@ -62,9 +62,11 @@ cd Secure-Chat/build
 
   Command Name | Description
 ------------- | -------------
-**userlist** | Displays a list of users currently connected.
-**startchat** | Start a new conversation with one of the available users.
-**exit** | Exits the chat secure message application or session that you're currently working in.
+**!userlist**               | Displays a list of users currently connected.
+**!startchat** [USERNAME]   | Start a new conversation with one of the available users.
+**!help**                   | Displays the explanation of all the possible commands. Help menu.
+**!exit**                   | Exits the chat secure message application or session that you're currently working in.
+
 
 ## Credits
 
